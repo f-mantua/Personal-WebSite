@@ -7,7 +7,7 @@ slug: about
 menu:
   main:
     name: "About"
-    weight: 10
+    weight: 2
 ---
 
 <!-- wp:paragraph -->

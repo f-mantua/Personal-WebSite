@@ -11,7 +11,18 @@ theme = 'blowfish'
 		name = "Federico Mantua"
 		headline = "Team Leader / Software Engineer"
 		bio = "Microsoft Solution C# .NET"
-		linkedin = ""
+		linkedin = "https://www.linkedin.com/in/federico-mantua-8a44491a"
+
+[menu]
+	[[menu.main]]
+		name = "Home"
+		url = "/"
+		weight = 1
+	[[menu.main]]
+		name = "LinkedIn"
+		url = "https://www.linkedin.com/in/federico-mantua-8a44491a"
+		pre = "linkedin"
+		weight = 3
 
 	[params.homepage]
 		layout = "profile"
