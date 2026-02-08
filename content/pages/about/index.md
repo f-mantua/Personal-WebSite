@@ -4,6 +4,10 @@ date: 2025-08-14T15:22:31
 lastmod: 2025-08-22T17:21:50
 draft: false
 slug: about
+menu:
+	main:
+		name: About
+		weight: 10
 ---
 
 <!-- wp:paragraph -->
