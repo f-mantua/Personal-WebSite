@@ -1,0 +1,8 @@
+/* Widen content area */
+.max-w-prose {
+  max-width: 100% !important;
+}
+
+.prose {
+  max-width: 100% !important;
+}
