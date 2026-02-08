@@ -1,5 +1,11 @@
 <aside class="w-full lg:w-1/4 lg:max-w-xs lg:shrink-0">
-  <div class="space-y-8">
+  <button
+    id="sidebar-toggle"
+    class="mb-4 inline-flex items-center gap-2 rounded border border-neutral-200 px-3 py-2 text-sm text-neutral-700 hover:text-primary-600 dark:border-neutral-700 dark:text-neutral-300 lg:hidden"
+    type="button">
+    ☰ Menu
+  </button>
+  <div id="sidebar-panel" class="space-y-8 hidden lg:block">
     <section class="space-y-2">
       {{ with site.Params.Author.name }}
         <a class="text-xl font-bold text-neutral-900 dark:text-neutral-100 hover:text-primary-600" href="{{ "" | relLangURL }}">{{ . }}</a>
@@ -42,4 +48,14 @@
       </ul>
     </section>
   </div>
+  <script>
+    (function () {
+      var btn = document.getElementById("sidebar-toggle");
+      var panel = document.getElementById("sidebar-panel");
+      if (!btn || !panel) return;
+      btn.addEventListener("click", function () {
+        panel.classList.toggle("hidden");
+      });
+    })();
+  </script>
 </aside>
