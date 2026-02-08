@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <div class="flex flex-col gap-10 lg:flex-row">
+    {{ partial "sidebar.html" . }}
+    <div class="flex-1 min-w-0">
+      <section class="prose dark:prose-invert max-w-full">
+        {{ .Content }}
+      </section>
+      <section class="mt-10 space-y-10 w-full">
+        {{ range first 10 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+          {{ partial "article-link/simple.html" . }}
+        {{ end }}
+      </section>
+    </div>
+  </div>
+{{ end }}
