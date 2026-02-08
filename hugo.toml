@@ -6,6 +6,11 @@ theme = 'blowfish'
 [params]
 	mainSections = ["posts"]
 
+	[params.author]
+		name = "Federico Mantua"
+		headline = "Team Leader / Software Engineer"
+		bio = "Microsoft Solution C# .NET"
+
 	[params.homepage]
 		layout = "profile"
 		showRecent = true
