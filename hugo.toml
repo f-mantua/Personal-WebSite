@@ -6,7 +6,7 @@ theme = 'blowfish'
 [params]
 	mainSections = ["posts"]
 
-	[params.author]
+	[params.Author]
 		name = "Federico Mantua"
 		headline = "Team Leader / Software Engineer"
 		bio = "Microsoft Solution C# .NET"
