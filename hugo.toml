@@ -3,6 +3,16 @@ languageCode = 'it-it'
 title = 'Personal WebSite'
 theme = 'blowfish'
 
+[params]
+	mainSections = ["posts"]
+
+	[params.homepage]
+		layout = "profile"
+		showRecent = true
+		showRecentItems = 5
+		showMoreLink = true
+		showMoreLinkDest = "/posts/"
+
 [markup]
 	[markup.goldmark]
 		[markup.goldmark.renderer]
