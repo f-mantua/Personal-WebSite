@@ -1,15 +1,17 @@
 baseURL = 'https://example.org/'
 languageCode = 'it-it'
-title = 'Personal WebSite'
+title = 'Federico Mantua'
 theme = 'blowfish'
 
 [params]
 	mainSections = ["posts"]
+	disableTextInHeader = true
 
 	[params.Author]
 		name = "Federico Mantua"
 		headline = "Team Leader / Software Engineer"
 		bio = "Microsoft Solution C# .NET"
+		linkedin = ""
 
 	[params.homepage]
 		layout = "profile"

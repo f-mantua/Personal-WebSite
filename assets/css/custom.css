@@ -6,3 +6,19 @@
 .prose {
   max-width: 100% !important;
 }
+
+/* Move layout closer to the left */
+body {
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+}

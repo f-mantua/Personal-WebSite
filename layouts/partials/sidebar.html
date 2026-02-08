@@ -2,7 +2,7 @@
   <div class="space-y-8">
     <section class="space-y-2">
       {{ with site.Params.Author.name }}
-        <div class="text-xl font-bold text-neutral-900 dark:text-neutral-100">{{ . }}</div>
+        <a class="text-xl font-bold text-neutral-900 dark:text-neutral-100 hover:text-primary-600" href="{{ "" | relLangURL }}">{{ . }}</a>
       {{ end }}
       {{ with site.Params.Author.headline }}
         <div class="text-sm text-neutral-500 dark:text-neutral-400">{{ . }}</div>
@@ -16,10 +16,17 @@
     </section>
 
     <section class="pt-4 border-t border-neutral-200 dark:border-neutral-700">
-      <div class="text-xs uppercase tracking-widest text-neutral-500 dark:text-neutral-400">Chi sono</div>
-      {{ with site.GetPage "pages/about" }}
-        <a class="mt-2 inline-block text-sm text-neutral-700 dark:text-neutral-300 hover:text-primary-600" href="{{ .RelPermalink }}">About</a>
-      {{ end }}
+      <div class="flex items-center justify-between">
+        <div class="space-x-3">
+          <a class="text-sm text-neutral-700 dark:text-neutral-300 hover:text-primary-600" href="{{ "" | relLangURL }}">Home</a>
+          {{ with site.GetPage "pages/about" }}
+            <a class="text-sm text-neutral-700 dark:text-neutral-300 hover:text-primary-600" href="{{ .RelPermalink }}">About</a>
+          {{ end }}
+        </div>
+        {{ with site.Params.Author.linkedin }}
+          <a class="text-sm text-neutral-700 dark:text-neutral-300 hover:text-primary-600" href="{{ . | safeURL }}" target="_blank" rel="me noopener noreferrer">LinkedIn</a>
+        {{ end }}
+      </div>
     </section>
 
     <section class="pt-4 border-t border-neutral-200 dark:border-neutral-700">
