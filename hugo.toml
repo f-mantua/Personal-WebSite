@@ -1,0 +1,4 @@
+baseURL = 'https://example.org/'
+languageCode = 'it-it'
+title = 'Personal WebSite'
+theme = 'blowfish'
