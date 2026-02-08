@@ -2,3 +2,8 @@ baseURL = 'https://example.org/'
 languageCode = 'it-it'
 title = 'Personal WebSite'
 theme = 'blowfish'
+
+[markup]
+	[markup.goldmark]
+		[markup.goldmark.renderer]
+			unsafe = true
