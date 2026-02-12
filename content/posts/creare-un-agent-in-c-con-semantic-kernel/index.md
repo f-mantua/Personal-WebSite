@@ -19,7 +19,7 @@ categories:
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>In questo post voglio condividere come implementare un agent in c# sfruttando il&nbsp;<a href="https://www.blogger.com/blog/post/edit/522532583788893462/4400179474552568854#">semantic Kernel</a>.</p>
+<p>In questo post voglio condividere come implementare un agent in c# sfruttando il&nbsp;<a href="https://learn.microsoft.com/en-us/semantic-kernel/overview/">semantic Kernel</a>.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
