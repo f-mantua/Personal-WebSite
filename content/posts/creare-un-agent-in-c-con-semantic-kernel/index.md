@@ -238,6 +238,6 @@ ChatCompletionAgent agent = new() // 👈🏼 Definition of the agent
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>🔗 <a href="https://www.blogger.com/blog/post/edit/522532583788893462/4400179474552568854#">MyAgent su GitHub</a></li>
+<li>🔗 <a href="https://github.com/f-mantua/MyAgent">MyAgent su GitHub</a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
